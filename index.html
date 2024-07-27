@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="heading-title">
+            <h1>Jimmy's Diner</h1>
+            <p>The best place for burger and pizza.</p>
+        </div>        
+    </header>
+
+    <section class="menu" id="menu"></section>
+
+    <section class="checkout-container " id="checkout-container"> </section>
+
+
+
+    <section class="paymentBox-container">
+        
+        <div class="removemodal">
+            <button class="remove-modal" id="remove-modal">X</button>
+        </div>
+        <form class="form-container" id="myform">
+            <h3>Enter Your Payment Details</h3>
+                <input 
+                type="text" 
+                placeholder="Credit Card Number" 
+                aria-label="Enter your credit card number"
+                required >
+                <input 
+                type="text" 
+                id="card-cvv" 
+                placeholder="CVV" 
+                required />
+                <input 
+                type="text" 
+                id="card-cvv" 
+                placeholder="MM/YYYY " 
+                required />
+                <input 
+                type="submit" 
+                id="pay-btn" 
+                value="Pay" 
+                required />
+            </form>
+    </section>
+
+    <section class="thankyou" id="thankyou">
+        <div class="thankyou-box">
+            <h1>Thank You for shopping</h1>
+            <p>Your order has been recieved!!</p>
+        </div>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
